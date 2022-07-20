@@ -1,9 +1,14 @@
-/*
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
+function sendMail() {
+	var sender = document.getElementById('email')
+	var link = "mailto:me@example.com"
+	+ "?cc=" + sender
+	+ "&subject=" + 
+	+ "&body=" + document.getElementById('meassage')
+;
+
+window.location.href = link;
+}
 (function($) {
 
 	var $window = $(window),
